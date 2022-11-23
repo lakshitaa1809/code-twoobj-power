@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create two objects</title>
+  </head>
+  <body>
+    <p id="out"></p>
+    <script>
+      function Person(name, power, yuga) {
+        this.name = name;
+        this.power = power;
+        this.yuga = yuga;
+      }
+      const person1 = new Person("Ram", 2500, "Treta");
+      const person2 = new Person("Krishna", 2325, "Dwapar");
+      age();
+      function age() {
+        if (person1.power > person2.power) {
+          document.getElementById("out").innerHTML =
+            person1.name + " has more power.";
+        } else {
+          document.getElementById("out").innerHTML =
+            person2.name + " has more power.";
+        }
+      }
+    </script>
+  </body>
+</html>
